@@ -9,7 +9,7 @@ export default class Home extends Component{
             <div>
                 <br />
                 <div>
-                    <BoldCard>
+                    <BoldCard title={"Event Status"}>
                         <h4>Hello Alex K.</h4>
                         <h5>2020 San Francisco</h5>
                         <PlainChip text={"Qual Matches"}/>

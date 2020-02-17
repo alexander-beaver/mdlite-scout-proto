@@ -1,38 +1,81 @@
 import React, {Component} from 'react';
 
+import 'antd/dist/antd.css';
+
 import "material-design-lite/material.min";
 import "material-design-lite/material.min.css";
 import "../../assets/css/materialIcons.css";
 import {Link} from "react-router-dom";
 
+import {Layout, Menu, Breadcrumb, Icon, PageHeader} from 'antd';
+
+const { Header, Content, Footer, Sider } = Layout;
+const { SubMenu } = Menu;
+
 export default class Nav extends Component{
-    render() {
+
+
+    state = {
+        collapsed: false,
+    };
+
+    onCollapse = collapsed => {
+        console.log(collapsed);
+        this.setState({ collapsed });
+    };
+    render(){
         return(
-        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-            <header class="mdl-layout__header">
-                <div class="mdl-layout__header-row">
-                    <span class="mdl-layout-title">FRC Admin</span>
-                    <div class="mdl-layout-spacer"></div>
+            <Layout style={{ minHeight: '100vh' }}>
+                <Sider collapsible collapsed={this.state.collapsed} onCollapse={this.onCollapse}>
+                    <div className="logo" />
+                    <Menu theme="dark" mode="inline">
+                        <Menu.Item key="1">
+                            <Link to={"/"}>
+                                <Icon type="home" />
+                                <span>Home</span>
+                            </Link>
 
-                </div>
-            </header>
-            <div class="mdl-layout__drawer">
-                <span class="mdl-layout-title">Team 100</span>
-                <nav class="mdl-navigation">
-                    <Link class="mdl-navigation__link" to="/">Home</Link>
-                    <Link class="mdl-navigation__link" to="/t">Teams</Link>
-                    <Link class="mdl-navigation__link" to="/p">Pick list</Link>
-                    <Link class="mdl-navigation__link" to="/m">Match list</Link>
-                    <Link class="mdl-navigation__link" to="/e">Event Info</Link>
+                        </Menu.Item>
 
+                        <SubMenu
+                            key="sub1"
+                            title={
+                                <span>
+                  <Icon type="pie-chart" />
+                  <span>Reports</span>
+                </span>
+                            }
+                        >
+                            <Menu.Item key="2">
+                                <Link to={"/t"}>
+                                    <Icon type="team" />
+                                    <span>Teams</span>
+                                </Link>
+                            </Menu.Item>
+                            <Menu.Item key="3">
+                                <Link to={"/e"}>
+                                    <Icon type="trophy" />
+                                    <span>Matches</span>
+                                </Link>
+                            </Menu.Item>
 
+                        </SubMenu>
 
-
-                </nav>
-            </div>
-            <main class="mdl-layout__content">
-                <div class="page-content">{this.props.children}</div>
-            </main>
-        </div>);
+                    </Menu>
+                </Sider>
+                <Layout>
+                    <Header style={{ background: '#fff', padding: 0 }}>
+                        <PageHeader  title={"Team 100 Scouting"} subTitle={"San Francisco (2020CASF)"}
+                        />
+                    </Header>
+                    <Content style={{ margin: '0 16px' }}>
+                        <div>
+                            {this.props.children}
+                        </div>
+                    </Content>
+                    <Footer style={{ textAlign: 'center' }}>©2020 Team 100</Footer>
+                </Layout>
+            </Layout>
+        );
     }
 }
