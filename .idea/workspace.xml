@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfa183a7-e672-46de-b22d-9b5935409245" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/teams/PitScout.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/card/boldcard/BoldCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/card/boldcard/BoldCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/global/Nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/global/Nav.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/lists/biglist/Biglist.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/lists/biglist/Biglist.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/teams/TeamMaster.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/teams/TeamMaster.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +37,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Team100Scouting/Scouting2020/match" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/teams" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,6 +45,11 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/teams" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
@@ -89,7 +94,7 @@
       <workItem from="1581370326710" duration="649000" />
       <workItem from="1581436957906" duration="39000" />
       <workItem from="1581805036517" duration="13000" />
-      <workItem from="1581979905263" duration="2013000" />
+      <workItem from="1581979905263" duration="5806000" />
     </task>
     <servers />
   </component>
@@ -101,30 +106,30 @@
       <screen x="33" y="0" width="1333" height="768" />
     </state>
     <state x="482" y="142" width="426" height="479" key="FileChooserDialogImpl/33.0.1333.768@33.0.1333.768" timestamp="1581436994906" />
-    <state width="1312" height="187" key="GridCell.Tab.0.bottom" timestamp="1581980450304">
+    <state width="1312" height="187" key="GridCell.Tab.0.bottom" timestamp="1581982016581">
       <screen x="33" y="0" width="1333" height="768" />
     </state>
     <state width="1866" height="330" key="GridCell.Tab.0.bottom/303.1200.1366.768/33.0.1333.768@33.0.1333.768" timestamp="1580933795911" />
     <state width="1866" height="330" key="GridCell.Tab.0.bottom/303.1200.1366.768/33.0.1887.1200@33.0.1887.1200" timestamp="1580926508071" />
-    <state width="1312" height="187" key="GridCell.Tab.0.bottom/33.0.1333.768@33.0.1333.768" timestamp="1581980450304" />
-    <state width="1312" height="187" key="GridCell.Tab.0.center" timestamp="1581980450303">
+    <state width="1312" height="187" key="GridCell.Tab.0.bottom/33.0.1333.768@33.0.1333.768" timestamp="1581982016581" />
+    <state width="1312" height="187" key="GridCell.Tab.0.center" timestamp="1581982016579">
       <screen x="33" y="0" width="1333" height="768" />
     </state>
     <state width="1866" height="330" key="GridCell.Tab.0.center/303.1200.1366.768/33.0.1333.768@33.0.1333.768" timestamp="1580933795911" />
     <state width="1866" height="330" key="GridCell.Tab.0.center/303.1200.1366.768/33.0.1887.1200@33.0.1887.1200" timestamp="1580926508071" />
-    <state width="1312" height="187" key="GridCell.Tab.0.center/33.0.1333.768@33.0.1333.768" timestamp="1581980450303" />
-    <state width="1312" height="187" key="GridCell.Tab.0.left" timestamp="1581980450303">
+    <state width="1312" height="187" key="GridCell.Tab.0.center/33.0.1333.768@33.0.1333.768" timestamp="1581982016579" />
+    <state width="1312" height="187" key="GridCell.Tab.0.left" timestamp="1581982016577">
       <screen x="33" y="0" width="1333" height="768" />
     </state>
     <state width="1866" height="330" key="GridCell.Tab.0.left/303.1200.1366.768/33.0.1333.768@33.0.1333.768" timestamp="1580933795910" />
     <state width="1866" height="330" key="GridCell.Tab.0.left/303.1200.1366.768/33.0.1887.1200@33.0.1887.1200" timestamp="1580926508070" />
-    <state width="1312" height="187" key="GridCell.Tab.0.left/33.0.1333.768@33.0.1333.768" timestamp="1581980450303" />
-    <state width="1312" height="187" key="GridCell.Tab.0.right" timestamp="1581980450304">
+    <state width="1312" height="187" key="GridCell.Tab.0.left/33.0.1333.768@33.0.1333.768" timestamp="1581982016577" />
+    <state width="1312" height="187" key="GridCell.Tab.0.right" timestamp="1581982016580">
       <screen x="33" y="0" width="1333" height="768" />
     </state>
     <state width="1866" height="330" key="GridCell.Tab.0.right/303.1200.1366.768/33.0.1333.768@33.0.1333.768" timestamp="1580933795911" />
     <state width="1866" height="330" key="GridCell.Tab.0.right/303.1200.1366.768/33.0.1887.1200@33.0.1887.1200" timestamp="1580926508071" />
-    <state width="1312" height="187" key="GridCell.Tab.0.right/33.0.1333.768@33.0.1333.768" timestamp="1581980450304" />
+    <state width="1312" height="187" key="GridCell.Tab.0.right/33.0.1333.768@33.0.1333.768" timestamp="1581982016580" />
     <state x="188" y="19" key="SettingsEditor" timestamp="1580933426494">
       <screen x="33" y="0" width="1333" height="768" />
     </state>

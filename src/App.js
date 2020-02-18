@@ -11,6 +11,7 @@ import Home from "./pages/home/Home";
 import Biglist from "./components/lists/biglist/Biglist";
 import TeamMaster from "./pages/teams/TeamMaster";
 import TeamDetail from "./pages/teams/TeamDetail";
+import PitScout from "./pages/teams/PitScout";
 
 
 
@@ -24,8 +25,10 @@ export default function App() {
             renders the first one that matches the current URL. */}
             <Switch>
 
+              <Route path={"/t/:id/ps"} component={PitScout} />
               <Route path={"/t/:id"} component={TeamDetail}>
               </Route>
+
               <Route path="/t">
               <TeamMaster />
               </Route>
